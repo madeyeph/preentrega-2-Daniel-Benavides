@@ -246,6 +246,18 @@ nav {
     height: auto;
     padding: 20px;
 }
+@media (max-width: 430px) {
+    .equipo div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equipo div img {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+    }
+}    
 /* Termina equipos */
 /* Empieza pilotos */
 .piloto{
@@ -267,12 +279,17 @@ nav {
     justify-content: space-around;
     margin:20px;
 }
-@media (max-width:430px) {
-    .piloto div{
-        display: flex;
+@media (max-width: 430px) {
+    .piloto div {
         flex-direction: column;
-        margin:5px;
-    } 
+        align-items: center;
+    }
+
+    .piloto div img {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+    }
 }
 /* Termina pilotos */
 /* Empieza contacto */
