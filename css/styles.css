@@ -43,7 +43,7 @@ nav {
 }
 
 .menu_arriba li a:hover {
-    color: #f00;
+    color: #8B0000;
 }
 
 .menu_hamburguesa {
@@ -77,10 +77,14 @@ nav {
     h1 {
         font-size: 20px;
         margin: 0 0 10px 0;
+        text-align: center;
     }
 
     .menu_hamburguesa {
         display: flex;
+    }
+    .menu_hamburguesa :hover{
+        background-color:#8f0000;
     }
 
     nav {
@@ -110,11 +114,21 @@ nav {
 }
 /* Termina header */
 /* Empieza index */
-.section_1_index{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color:#EB0000;
+.section_1_index {
+    margin: 20px auto;
+    max-width: 65%;
+    position:relative;
+    padding: 20px;
+  }
+  .carousel-inner h3{
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 8px;
+    border-radius: 5px;
+}  
+.carousel-inner p{
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 8px;
+    border-radius: 5px;
 }
 .section_2_index{
     background-color: black;
@@ -277,7 +291,10 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin:20px;
+    margin:10px;
+}
+.piloto div img{
+    width: 600px;
 }
 @media (max-width: 430px) {
     .piloto div {
@@ -293,56 +310,33 @@ nav {
 }
 /* Termina pilotos */
 /* Empieza contacto */
-.contacto_mapa {
-    display: flex;
-    justify-content: center;
-}
-
-#map_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#form_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mapa_cali {
-    order: -1;
-    margin-right: 20px;
-}
 .formulario{
-    display:flex;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 30px;
 }
 .formulario h2{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    margin: 20px;
-
-}
-.formulario form{
-    padding-right: 200px;
-    padding-left: 500px;
-}
-.form label{
     font-family: Arial, Helvetica, sans-serif;
-    color:#EB0000
-}
-@media only screen and (max-width: 430px) {
-    .formulario form {
-        width: auto;
-        padding: 0 10px;
-    }
+    font-weight: bold;
+    color: white;
+    background-color: #EB0000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
 
-    .mapa_cali {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+}
+.formulario label{
+    color: #8f0000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+}
+.formulario form button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #EB0000;
+    border: none;
 }
 /* Termina contacto */
 /* Empieza footer */
@@ -413,11 +407,19 @@ footer {
     }
 
     .nav_footer {
+        flex-direction: column;
+        align-items: center;
         margin: 10px 0;
+    }
+    .nav_footer li{
+        margin: 10px;
     }
 
     .redes_footer {
         margin: 10px 0;
     }
-}
+    .copyright_footer{
+        text-align: center;
+    }
+}    
 /*Termina Footer*/
