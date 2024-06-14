@@ -22,7 +22,8 @@ $fuenteSecundaria:"Segoe UI";
     h2{
         text-align: center;
         margin: 20px;
-        padding: 10px;            color: white;
+        padding: 10px;            
+        color: $colorBlanco;
         font-family:$fuenteSecundaria;
         font-weight: bold;
     }
@@ -32,6 +33,26 @@ $fuenteSecundaria:"Segoe UI";
                 width: 400px;
                 height: auto;
                 padding: 20px;
+        }
+    }
+}
+%estiloPiloto{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    h2{
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+        color: $colorBlanco;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    div{
+        @extend %posiciongaleria;
+        margin:10px;
+        img{
+            width: 600px;
         }
     }
 }

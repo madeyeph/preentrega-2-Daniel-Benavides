@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.equipo div {
+.piloto div, .equipo div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -27,6 +27,26 @@
   width: 400px;
   height: auto;
   padding: 20px;
+}
+
+.piloto {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.piloto h2 {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.piloto div {
+  margin: 10px;
+}
+.piloto div img {
+  width: 600px;
 }
 
 header {
@@ -122,12 +142,70 @@ header .menu_hamburguesa .bar {
     text-align: center;
   }
 }
+.carrera_1 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #EB0000;
+}
+.carrera_1 div {
+  width: 50%;
+}
+.carrera_1 h2 {
+  padding-left: 70px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  margin: 30px;
+}
+.carrera_1 p {
+  width: 600px;
+  padding-left: 60px;
+  margin: 15px;
+  color: black;
+}
+
+.carrera_2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #EB0000;
+}
+.carrera_2 div {
+  width: 50%;
+}
+.carrera_2 h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 30px;
+}
+.carrera_2 p {
+  width: 600px;
+  margin: 15px;
+  color: white;
+}
+
 @media (max-width: 430px) {
   .equipo div {
     flex-direction: column;
     align-items: center;
   }
   .equipo div img {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .piloto div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .piloto div img {
     width: 100%;
     max-width: 400px;
     padding: 10px;
