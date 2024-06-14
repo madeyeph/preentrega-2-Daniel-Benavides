@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: $colorBlanco;
+    .logo_header{
+        height: 50px;
+    }
+    h1 {
+        font-size: 24px;
+        margin: 0 20px;
+    }
+    
+    nav {
+        flex-grow: 1;
+    }
+    .menu_arriba {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        li{
+            margin-left: 20px;
+            a{
+                text-decoration: none;
+                color: $colorNegro;
+                font-family: $fuentePrincipal;
+                font-weight: bold;
+                &:hover{
+                    color:$colorPrimario;
+                }
+            }  
+        }
+    }
+    .menu_hamburguesa {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        .bar {
+            width: 25px;
+            height: 3px;
+            margin: 4px 0;
+            background-color: $colorNegro;
+            }
+    }    
+}
+@media (max-width: 430px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        .logo_header{
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .h1{
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        .menu_hamburguesa{
+            display:flex;
+            &:hover{
+                color:$colorPrimario;
+            }
+        }
+        .nav{
+            width:100%;
+        }
+        .menu_arriba{
+            flex-direction: column;
+            width: 100%;
+            display: none;
+        }    
+        .menu_arriba.show{
+            display:flex;
+            .menu_arriba{
+                li{
+                    margin: 10px 0;
+                    a{
+                        font-size: 18px;
+                        display: block;
+                        width: 100%;
+                        text-align: center; 
+                    }
+                }
+            }    
+        }
+    }
+}

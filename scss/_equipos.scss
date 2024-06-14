@@ -1,0 +1,14 @@
+.equipo{
+    @extend %estiloEquipo;
+    @media (max-width: 430px){
+        div{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+                max-width: 400px;
+                padding: 10px;
+            }
+        }
+    }
+}

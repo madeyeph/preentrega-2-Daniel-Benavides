@@ -1,0 +1,37 @@
+$colorPrimario:#EB0000;
+$colorsecundario:#8f0000;
+$colorterciario: #ff5c5c;
+$colorNegro: black;
+$colorBlanco:white;
+$fuentePrincipal: "Arial";
+$fuenteSecundaria:"Segoe UI";
+%posicionCentral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+%posiciongaleria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+%estiloEquipo{
+    display: flex;
+    flex-direction: column;
+    background-color: $colorPrimario;
+    h2{
+        text-align: center;
+        margin: 20px;
+        padding: 10px;            color: white;
+        font-family:$fuenteSecundaria;
+        font-weight: bold;
+    }
+    div{
+        @extend %posiciongaleria;
+        img{
+                width: 400px;
+                height: auto;
+                padding: 20px;
+        }
+    }
+}

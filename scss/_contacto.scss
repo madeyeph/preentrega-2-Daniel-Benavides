@@ -1,0 +1,25 @@
+.formulario{
+    @extend %posicionCentral;
+    margin: 30px;
+    h2{
+        font-family: $fuentePrincipal;
+        font-weight: bold;
+        color: $colorBlanco;
+        background-color: $colorPrimario;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    label{
+        color: $colorsecundario;
+        font-family: $fuenteSecundaria;
+        font-weight:bold;
+    }
+    form button{
+        font-family: $fuentePrincipal;
+        font-weight: bold;
+        color: $colorBlanco;
+        background-color: $colorPrimario;
+        border: none;
+    }
+}
